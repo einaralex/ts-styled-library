@@ -13,15 +13,24 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "clean": "rm -rf ./dist/",
-    "prepare": "install-peers"
+    "prepare": "install-peers",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/react": "^6.3.8",
     "@types/react": "^17.0.19",
     "@types/styled-components": "^5.1.14",
+    "babel-loader": "^8.2.2",
     "install-peers-cli": "^2.2.0",
+    "storybook": "^6.3.8",
     "ts-loader": "^9.2.5",
     "typescript": "^4.4.2",
     "typescript-plugin-styled-components": "^2.0.0"
