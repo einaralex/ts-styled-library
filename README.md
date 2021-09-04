@@ -1,5 +1,8 @@
 
+# Typescript, React, styled component library boilerplate
+
 `yarn build`
+
 `yarn publish`
 
 
