@@ -1,15 +1,17 @@
 {
   "name": "ts-styled-library",
-  "version": "0.1.3-alpha.5",
-  "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "version": "0.1.3-alpha.7",
+  "main": "./dust/cjs/index.js",
+  "module": "./dust/esm/index.js",
+  "types": "./dust/esm/index.d.ts",
   "files": [
     "dist/*"
   ],
   "license": "MIT",
   "scripts": {
-    "build": "yarn clean && tsc -p tsconfig.json",
+    "build": "yarn clean && yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "clean": "rm -rf ./dist/",
     "prepare": "install-peers"
   },
