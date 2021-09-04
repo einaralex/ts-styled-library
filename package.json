@@ -14,7 +14,7 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "clean": "rm -rf ./dist/",
     "prepare": "install-peers",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "yarn build:cjs && start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {

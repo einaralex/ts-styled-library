@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { A } from '../'
+import { A } from '../../dist/cjs/'
 
 export default {
   title: 'Example/A',
