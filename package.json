@@ -1,0 +1,29 @@
+{
+  "name": "ts-styled-library",
+  "version": "0.0.4",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean && tsc -p tsconfig.json",
+    "clean": "rm -rf ./dist/",
+    "prepare": "install-peers"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.19",
+    "@types/styled-components": "^5.1.14",
+    "install-peers-cli": "^2.2.0",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.2",
+    "typescript-plugin-styled-components": "^2.0.0"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  }
+}
