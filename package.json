@@ -11,7 +11,7 @@
   "scripts": {
     "build": "yarn clean && yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "clean": "rm -rf ./dist/",
     "prepare": "install-peers",
     "storybook": "start-storybook -p 6006",
