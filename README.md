@@ -6,6 +6,10 @@
 `yarn publish`
 
 
+## Storybook
+
+See `storybook` branch.
+
 ## Get `yarn link` to work while developing
 
 Make sure `peer-installs` runs by doing `yarn install`.
