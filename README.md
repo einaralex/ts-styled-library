@@ -14,5 +14,5 @@ Navigate to `/node_modules/react` and run `yarn link`
 
 Now navigate into the host project and run `yarn link react`
 
-Read in detailed description here:
+Read a detailed description here:
 https://dev.to/yvonnickfrin/how-to-handle-peer-dependencies-when-developing-modules-18fa
